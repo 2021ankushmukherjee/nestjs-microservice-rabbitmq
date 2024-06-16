@@ -148,7 +148,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DATABASE: auth-db
       POSTGRES_SSH: false
-      DATA_DIR: /sample/data
+      # DATA_DIR: /sample/data
       ENCRYPTION_KEY: YourSecretKey
       ENCRYPTION_ALGORITHM: aes-256-cbc
       SWAGGER_ENABLED: false

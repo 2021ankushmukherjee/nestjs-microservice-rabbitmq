@@ -7,7 +7,7 @@ FROM node:20-alpine As development
 USER node
 
 # Create app directory
-WORKDIR /backend/apps/order_ms
+WORKDIR /backend/apps/auth_ms
 
 # RUN mkdir -p /backend/data
 

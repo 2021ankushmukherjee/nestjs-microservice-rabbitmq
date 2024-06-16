@@ -9,7 +9,7 @@ USER node
 # Create app directory
 WORKDIR /backend/apps/billing_ms
 
-RUN mkdir -p /backend/data
+# RUN mkdir -p /backend/data
 
 # Copy application dependency manifests to the container image.
 # A wildcard is used to ensure copying both package.json AND package-lock.json (when available).
@@ -57,7 +57,7 @@ FROM node:20-alpine As production
 
 WORKDIR /backend/apps/billing_ms
 
-RUN mkdir -p /backend/data
+# RUN mkdir -p /backend/data
 
 
 # Copy the bundled code from the build stage to the production image
