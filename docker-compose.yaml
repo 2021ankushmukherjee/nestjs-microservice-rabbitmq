@@ -119,7 +119,7 @@ services:
       target: development
       # target: production
     volumes:
-      - ./apps/backend:/backend/apps/auth_ms
+      - ./apps/auth_ms:/backend/apps/auth_ms
       - authms_node_modules:/backend/apps/auth_ms/node_modules
       # - ./.data/backend:/sample/data
       # - ./credentials:/usr/credentials

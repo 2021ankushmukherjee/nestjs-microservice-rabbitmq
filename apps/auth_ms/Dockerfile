@@ -55,14 +55,14 @@ ENV NODE_ENV production
 ###################
 FROM node:20-alpine As production
 
-WORKDIR /backend/apps/order_ms
+WORKDIR /backend/apps/auth_ms
 
 # RUN mkdir -p /backend/data
 
 
 # Copy the bundled code from the build stage to the production image
-COPY --chown=node:node --from=build /backend/apps/order_ms/node_modules ./node_modules
-COPY --chown=node:node --from=build /backend/apps/order_ms/dist ./dist
+COPY --chown=node:node --from=build /backend/apps/auth_ms/node_modules ./node_modules
+COPY --chown=node:node --from=build /backend/apps/auth_ms/dist ./dist
 
 # Start the server using the production build
 CMD [ "node", "./dist/src/main.js" ]
