@@ -5,7 +5,7 @@
 FROM node:20-alpine As development
 
 USER node
-
+git 
 # Create app directory
 WORKDIR /backend/apps/order_ms
 
