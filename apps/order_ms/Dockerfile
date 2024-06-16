@@ -53,7 +53,7 @@ ENV NODE_ENV production
 ###################
 # PRODUCTION
 ###################
-FROM node:18-alpine As production
+FROM node:20-alpine As production
 
 WORKDIR /backend/apps/order_ms
 
